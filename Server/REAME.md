@@ -1,6 +1,6 @@
-# Client
+# Server:
 
-This is a client project.
+This is a server project.
 
 > npm init
 > npm i -g nodemon
