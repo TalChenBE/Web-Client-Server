@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lec 02- CSS</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+    <!-- import the bootstrap -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+
+    <script src="ContactUs.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <form class="contact-page" onSubmit="handelSubmitClick()">
+      <div class="left">
+        <div class="overlay">
+          <h1>Contact Us</h1>
+          <div class="contact-container">
+            <div class="support">
+              <h2>24/7 support</h2>
+              <button type="button" class="btn btn-outline-info">
+                Contact Support
+              </button>
+            </div>
+            <div>
+              <div class="contact-container-items">
+                <h2>CALL SALER NOW</h2>
+                <span class="flex-container">
+                  <i class="fa fa-whatsapp fa-phone"></i>
+                  <i class="fa fa-phone"></i>
+                  <p>+972-5371-648</p>
+                </span>
+              </div>
+              <div class="contact-container-items">
+                <h2>Located:</h2>
+                <span class="flex-container">
+                  <i class="fa fa-map-marker"></i>
+                  <p>Carmiel, yafe 104</p>
+                </span>
+              </div>
+              <div class="contact-container-items">
+                <h2>MAIL US NOW</h2>
+                <span class="flex-container">
+                  <i class="fa fa-envelope"></i>
+                  <p>contact_us@best.pro.co.il</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <h2 class="contact-header">Contact Us</h2>
+        <div class="contact-name-continer inputs">
+          <input
+            class="contact-input contact-input-name"
+            type="string"
+            placeholder="Enter name *"
+            required
+            onblur="handleChangeName()"
+          />
+        </div>
+        <div class="contact-email-continer inputs">
+          <input
+            class="contact-input contact-input-email"
+            type="email"
+            placeholder="Enter email *"
+            required
+            onblur="handleChangeEmail()"
+          />
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="true"
+            onclick="handelDropdwonClick()"
+          >
+            Contact us concerning: *
+          </button>
+          <ul class="dropdown-menu" id="dropdown-menu" style="display: none">
+            <li class="dropdown-item" onclick="handelDropdwonItemClick(event)">
+              Erorr in login
+            </li>
+            <li class="dropdown-item" onclick="handelDropdwonItemClick(event)">
+              Erorr in signin
+            </li>
+            <li class="dropdown-item" onclick="handelDropdwonItemClick(event)">
+              About us
+            </li>
+            <li class="dropdown-item" onclick="handelDropdwonItemClick(event)">
+              Other
+            </li>
+          </ul>
+        </div>
+        <div class="contact-subject-continer inputs">
+          <textarea
+            class="form-control textarea-subject"
+            aria-label="Enter subject *"
+            required
+          ></textarea>
+        </div>
+        <div class="submit-continer">
+          <input
+            class="submit-button"
+            type="submit"
+            value="Create my account"
+          />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
