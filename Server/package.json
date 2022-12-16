@@ -15,7 +15,7 @@
     "Javascript",
     "Node"
   ],
-  "author": "MoshPe",
+  "author": ["MoshPe", "Tal-Chen Ben-Eliyahu"],
   "license": "MIT",
   "devDependencies": {
     "@types/dotenv-safe": "^8.1.2",
